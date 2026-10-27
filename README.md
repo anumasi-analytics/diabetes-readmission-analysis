@@ -94,7 +94,7 @@ Connect Power BI Desktop to the `diabetes_encounters` table in MySQL. The dashbo
 
 ## Key Findings
 
-Overall, **8.98%** of encounters (6,283 of 69,979) ended in 30-day readmission.
+Overall, **8.98%** of patients (6,283 of 69,979) ended in 30-day readmission.
 
 | Factor | Lowest group | Highest group |
 |--------|--------------|---------------|
@@ -107,7 +107,7 @@ Overall, **8.98%** of encounters (6,283 of 69,979) ended in 30-day readmission.
 **Other observations**
 
 - **Medication change:** 9.44% (change) vs 8.60% (no change).
-- **A1C test:** 81.65% of encounters had no A1C test, and this group also had the highest readmission rate (9.11%).
+- **A1C test:** 81.65% of patients had no A1C test, and this group also had the highest readmission rate (9.11%).
 
 **Combined risk segmentation**
 
@@ -143,7 +143,7 @@ The Power BI dashboard has three pages with a page navigator, four synced slicer
 - **Associations, not causes:** The analysis is descriptive. A higher readmission rate in a group does not mean that factor causes readmission.
 - **No predictive model:** The High / Medium / Lower risk segments are simple rule-based groups built from prior visits and length of stay. They are not a validated prediction model and must not be used for clinical decisions.
 - **Small high-risk group:** The High risk segment has only 683 patients (about 1% of the data), so its rate is based on a small group.
-- **A1C data is mostly missing:** 81.65% of encounters have no A1C test result, so conclusions about A1C are limited.
+- **A1C data is mostly missing:** 81.65% of patients have no A1C test result, so conclusions about A1C are limited.
 - **Weak drivers:** Medication change (9.44% vs 8.60%) and admission type (8.29% to 9.29%) show only small differences.
-- **Data cleaning:** Cleaning reduced the data from 101,766 to 69,979 encounters, so the results describe the cleaned data only.
+- **Data cleaning:** Cleaning reduced the data from 101,766 encounters to 69,979 patients. The main step was keeping only each patient's first encounter (29,341 repeat encounters removed), so the results describe first stays, not every stay.
 - **Data not shared:** The dataset is confidential and not included, so the analysis can be repeated only by someone with their own authorized access to the data.

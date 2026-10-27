@@ -1,0 +1,6 @@
+data/
+.idea/
+powerbi/*.pbix
+python/*.txt
+*.csv
+__pycache__/

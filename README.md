@@ -48,6 +48,7 @@ diabetes_project/
 ├── sql/
 │   ├── 00_schema.sql        # Creates database and table (schema)
 │   └── 06_sql_analysis.sql  # Data checks + 9 analysis queries
+├── docs/                    # Project report (PDF) and presentation (PowerPoint)
 ├── charts/                  # EDA charts produced by 04_eda.py
 ├── powerbi/
 │   └── screenshots/         # Dashboard screenshots (3 pages)
@@ -188,6 +189,15 @@ The Power BI dashboard has three pages with a page navigator, four synced slicer
 - **Weak drivers:** Medication change (9.44% vs 8.60%) and admission type (8.29% to 9.29%) show only small differences.
 - **Data cleaning:** Cleaning reduced the data from 101,766 encounters to 69,979 patients. The main step was keeping only each patient's first encounter (29,341 repeat encounters removed), so the results describe first stays, not every stay.
 - **Data not included:** The raw and cleaned data files are not stored in this repository, so the dataset must be downloaded from the source link to repeat the analysis.
+
+## Project Documents
+
+- [Project report (PDF, 8 pages)](docs/Capstone1_Project_Report.pdf)
+- [Presentation (PowerPoint, 12 slides)](docs/Capstone1_Presentation.pptx) (GitHub shows a download link for PowerPoint files)
+
+**Power BI data model (star schema):**
+
+![Power BI data model](powerbi/screenshots/04_data_model.png)
 
 ## Data Source and Citation
 
